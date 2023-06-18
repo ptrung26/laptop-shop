@@ -1,0 +1,96 @@
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+
+}
+
+.invoice {
+    margin: 60px auto 0;
+    padding: 10px 20px 40px;
+    border: 2px solid #ccc;
+
+    &__header {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(86, 86, 226);
+        text-align: right;
+    }
+
+    &__heading {
+        color: #000;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    &__info {
+        margin-top: 20px;
+    }
+
+    &__item {
+        width: 40%;
+    }
+
+    &__index,
+    &__quantity {
+        width: 10%;
+    }
+
+    &__price,
+    &__totalPrice {
+        width: 20%;
+    }
+
+    &__table {
+        margin-top: 30px;
+
+        &-header {
+            display: flex;
+            gap: 0 8px;
+
+            p {
+                padding: 12px 0;
+                background-color: rgb(71, 71, 255);
+                color: #fff;
+                text-align: center;
+            }
+        }
+
+        &-body {
+            display: flex;
+            gap: 0 8px;
+
+            p {
+                padding: 12px 0;
+                text-align: center;
+            }
+        }
+    }
+
+    &__total {
+        margin-top: 20px;
+        text-align: right;
+        font-weight: 600;
+        font-size: 25px;
+    }
+}
+
+.export-invoice {
+    display: block;
+    background-color: rgb(244, 75, 75);
+    width: 120px;
+    padding: 12px 0;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-top: 40px;
+}

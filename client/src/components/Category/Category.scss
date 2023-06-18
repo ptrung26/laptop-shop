@@ -1,0 +1,39 @@
+.category-product {
+    margin-top: 40px;
+
+    &__header {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        justify-content: space-between;
+
+        a {
+            margin-right: 20px;
+            color: #2b80dd;
+            text-decoration: underline;
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        background-color: #2b80dd;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        background-image: url('https://laptopaz.vn/template/t2021/images/bg_title.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -12px;
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,145 @@
+.header {
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 60px;
+        padding: 8px 0;
+    }
+
+
+    &__logo {
+        img {
+            width: 150px;
+        }
+    }
+
+    &__search {
+        width: 500px;
+        position: relative;
+        z-index: 10001;
+
+        &-input {
+            width: 100%;
+            height: 40px;
+            padding: 0 12px;
+            border: 1px solid #2b80dd;
+
+            &::placeholder {
+                font-weight: 500;
+                font-size: 14px;
+                color: var(--gray);
+            }
+        }
+
+        &-btn {
+            height: 40px;
+            width: 40px;
+            background-color: #2b80dd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        &-results {
+            background-color: #fff;
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 0 8px;
+
+            .search-product {
+                padding: 12px 8px;
+                border-bottom: 1px solid #e1e1e1;
+                display: flex;
+                gap: 0 12px;
+
+                &__image {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                &__name {
+                    color: #333333;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: #2b80dd;
+                    }
+                }
+
+                &__price {
+                    color: #ff0000;
+                    font-weight: 500;
+                    margin-top: 4px;
+                }
+            }
+        }
+
+
+    }
+
+    &__cart {
+        cursor: pointer;
+        position: relative;
+
+        &-total {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: rgb(235, 10, 10);
+            color: #fff;
+            position: absolute;
+            top: -4px;
+            left: 20px;
+        }
+    }
+
+    &__signin {
+        display: inline-block;
+        background-color: #ff0000;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 5px;
+    }
+
+    &__hello {
+        color: #2b80dd;
+
+        button {
+            color: rgb(235, 10, 10);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 37px;
+        background-color: #2b80dd;
+
+        &-list {
+            display: flex;
+            gap: 0 60px;
+        }
+
+        &-item {
+            color: #fff;
+            font-weight: 600;
+        }
+
+    }
+}

@@ -1,0 +1,57 @@
+.filter {
+    margin-top: 60px;
+
+    h2 {
+        font-weight: 500;
+
+    }
+
+    &__title {
+        color: #007bff;
+        cursor: pointer;
+    }
+
+    &__section {
+        margin-top: 12px;
+        display: flex;
+        gap: 0 20px;
+    }
+
+    &__list {
+        position: relative;
+
+        &:hover {
+            ul {
+                display: block;
+            }
+        }
+
+        ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            width: 150px;
+            display: none;
+            padding: 10px 12px;
+
+            li {
+                &:hover {
+                    color: rgb(250, 171, 26);
+                    cursor: pointer;
+                }
+
+                &.active {
+                    color: rgb(250, 171, 26);
+                }
+            }
+        }
+    }
+
+    &__result {
+        display: flex;
+        margin-top: 40px;
+        margin-left: -12px;
+        flex-wrap: wrap;
+    }
+}
