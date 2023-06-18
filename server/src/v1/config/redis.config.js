@@ -1,7 +1,7 @@
 const { createClient } = require("redis");
-
+require("dotenv").config();
 const client = createClient({
-    port: 6379,
+    port: process.env.REDIS_PORT,
 });
 client
     .connect()

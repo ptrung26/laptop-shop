@@ -89,7 +89,7 @@ const orderController = {
             const html = `
             <p><b>Mã đơn hàng:</b> ${newOrder.id}</p>
             <p><b>Ngày đặt:</b> ${date.toLocaleString()}</p>
-            <a href='${process.env.URL_SERVER}/invoice/${newOrder.id}'>Click vào đây để xem thông tin chi tiết</a>
+            <a href='${process.env.URL_CLIENT}/invoice/${newOrder.id}'>Click vào đây để xem thông tin chi tiết</a>
             `
             const rs = await sendEmail(order.email, subject, html);
             return responseHandler.ok(res, {
